@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    caret-color: transparent;
+    /* 隐藏鼠标点击这些元素时出现的光标 */
+}
+
+
+td {
+    border: 2px solid #333;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    /*垂直*/
+    font-family: "微软雅黑";
+    /* font-style: italic; */
+    font-weight: bold;
+    font-size: 70px;
+    cursor: pointer;
+    /*光标属性*/
+}
+
+.table-container {
+    text-align: center;
+}
+
+table {
+    display: inline-block;
+    margin-top: 8%;
+    border-collapse: collapse;
+    /*相邻单元格的边框合并为一个边框*/
+}
+
+/*去除最外部边框*/
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child {
+    border-left: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+button {
+    background-color: white;
+    width: 306px;
+    height: 45px;
+    border-style: solid;
+    /* 设置边框样式为实线 */
+    border-color: skyblue;
+    /* 设置边框颜色为蓝色 */
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button:hover {
+    background-color: skyblue;
+}
+
+
+.endgame {
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: rgba(205, 132, 65, 0.8);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    /* margin-left: 50px; */
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
